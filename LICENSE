@@ -1,0 +1,34 @@
+MIT License
+
+Copyright (c) 2026 Juan Ruiz Valencia
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+NOTE ON SCHEMAS AND SPECIFICATIONS (not part of the license):
+
+This license covers the CODE in this repository only. This repository does
+NOT contain, and must never contain, the MISMO Reference Model schema, the
+GSE UAD 3.6 subschema, or any other MISMO-derived schema artifact. Those
+files are copyrighted by their respective owners (MISMO; Fannie Mae and
+Freddie Mac) and are distributed under their own terms. The `uad36
+fetch-schemas` command downloads the GSE-published UAD 3.6 subschema directly
+from the GSEs' official URLs onto the user's machine; users of the base MISMO
+schema must obtain it from mismo.org under MISMO's own license.

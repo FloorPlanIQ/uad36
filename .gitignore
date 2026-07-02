@@ -1,0 +1,17 @@
+# python
+__pycache__/
+*.pyc
+.venv/
+dist/
+*.egg-info/
+.pytest_cache/
+
+# example output
+example-output/
+
+# NEVER commit schema or sample artifacts (MISMO/GSE licensing — see README).
+# They live in ~/.uad36 (or $UAD36_ARTIFACTS_DIR), fetched at runtime.
+*.xsd
+*_Appraisal_*.xml
+*_Appraisal*.zip
+uad-3.6-schema.zip

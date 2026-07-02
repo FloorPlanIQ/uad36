@@ -1,0 +1,46 @@
+[project]
+name = "uad36"
+version = "0.1.0"
+description = "Unofficial parser for UAD 3.6 URAR appraisal XML and UCDP submission ZIPs (the GSE-published specification). Typed models, structural validation, exhibit extraction, PII redaction."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Juan Ruiz Valencia", email = "juan@floorplaniq.ai" }]
+requires-python = ">=3.11"
+dependencies = [
+    "lxml>=5.0",
+    "pydantic>=2.5",
+]
+keywords = ["uad", "urar", "ucdp", "appraisal", "mismo", "mortgage", "fannie-mae", "freddie-mac", "real-estate"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Text Processing :: Markup :: XML",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/FloorPlanIQ/uad36"
+Changelog = "https://github.com/FloorPlanIQ/uad36/blob/main/CHANGELOG.md"
+
+[project.scripts]
+uad36 = "uad36.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/uad36"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
