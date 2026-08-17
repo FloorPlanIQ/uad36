@@ -127,3 +127,15 @@ UAD® and Uniform Appraisal Dataset® materials are © Fannie Mae and Freddie Ma
 ## Status
 
 v0.1 — the useful 20%. Parses every official GSE sample scenario (12/12, structural validation clean). The API will move; pin your version. Issues and real-world (redacted!) problem files welcome.
+
+## Roadmap
+
+Roughly in order; driven by what integrators actually hit. Open an issue if your pain point isn't here.
+
+- **Track the GSE schema through the mandate window** — re-validate against each subschema/sample-set revision as the GSEs publish updates through Nov 2, 2026 and beyond.
+- **Richer validation findings** — more actionable messages for the failure modes the field notes document (exhibit-category variance, path quirks, version drift), and an interop guide for pairing structural validation with the GSEs' Compliance API rule set.
+- **More real-world field notes and fixtures** — expanding the notes above as more production-shaped packages surface; contributed (redacted) problem files especially welcome.
+- **Vendor-output notes** — documenting how common capture/form tools' output maps into UCDP packages, as examples surface.
+- **Docs site** — hosted reference docs and cookbook examples beyond this README.
+
+Out of scope by design: this library parses, validates, and redacts. It does not score, rank, or interpret appraisals — analysis layers belong downstream of it, not in it.
